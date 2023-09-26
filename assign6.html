@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prints all the prime numbers.</title>
+
+</head>
+<script>
+    function isPrime(num) {
+        if (num <= 1) { return false; } if (num <= 3) { return true; }
+        if (num % 2 === 0 || num % 3 === 0) {
+            return false;
+        } 
+
+        let i = 5;
+        while (i * i <= num) {
+            if (num % i === 0 || num % (i + 2) === 0) {
+                return false;
+            }
+            i += 6;
+        }
+
+        return true;
+    }
+
+    function printPrimesUpToN(n) {
+        if (n >= 2) {
+            console.log(2);
+        }
+
+        for (let i = 3; i <= n; i += 2) {
+            if (isPrime(i)) {
+                console.log(i);
+            }
+        }
+    }
+
+    // Example usage:
+    const n = 30; // Change this to your desired positive integer
+    printPrimesUpToN(n);
+
+</script>
+</body>
+
+</html>
