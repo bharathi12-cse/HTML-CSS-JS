@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="car">Car objects</p>
+
+    
+    <script>
+
+        var cars = []; //Create an empty array called "cars".
+
+
+        // Adding a new car object to the array
+        var Cars = [{
+            make: "Toyota",
+            model: "Camry",
+            year: 2018,
+        },
+        {
+            make: "BMW",
+            model: "X5",
+            year: 2023,
+        },
+        {
+            make: "Audi",
+            model: "Q7",
+            year: 2022
+        },];
+
+        console.log(Cars);
+
+        Cars.shift(); //Remove the first car object from the "cars" array
+        console.log(Cars);
+
+        var newCar = {
+            make: "Honda",
+            model: "Civic",
+            year: 2023,
+        };
+
+       // Adding the new car object to the "cars" array
+        Cars.push(newCar);
+
+        console.log(Cars);// Displaying the updated "cars" array with the new car object
+
+    //Update the "model" property of the second car object to "Accord"
+        Cars[1].model="Accord";
+        console.log(Cars);
+        
+        document.getElementById("car").innerHTML = "Updated cars Ojects"
+
+    </script>
+</body>
+
+</html>

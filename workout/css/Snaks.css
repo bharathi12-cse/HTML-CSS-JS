@@ -108,5 +108,8 @@ body {
       width: 83%;
     }
 
-
+    a:hover{
+        background-color: azure;
+        color: black;
+      }
   

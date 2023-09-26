@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Practice adding, removing, and updating values in arrays.</h1>
+
+<body>
+    <script>
+
+        //Create an empty array called "fruits". 0
+
+        var fruits = [];
+
+        // Adding fruits to the "fruits" array: "apple", "banana", "orange".
+
+        var fruits = ["apple", "banana", "orange"];
+
+        //Removing the first fruit from the array.
+
+        var fruits = ["apple", "banana", "orange"];
+        fruits.shift(); // This will remove the first element, which is "apple"
+        console.log(fruits)
+
+        var fruits = ["banana", "orange"];
+        fruits.push("grape");  // This will add "grape" to the end of the array
+        console.log(fruits)
+
+
+        //Updating the second fruit in the array to "pear".
+
+        var fruits = ["banana", "orange", "grape"];
+        fruits[1] = "pear";   // This updates the second fruit to "pear"
+        console.log(fruits)
+
+
+        var fruits = ["apple", "banana", "orange"];
+        fruits.shift(); // Remove the first element ("apple")
+        fruits.push("grape"); // Add "grape" to the end
+        fruits[1] = "pear"; // Update the second fruit to "pear"
+
+        console.log(fruits); // Print the final array
+
+
+    </script>
+</body>
+
+</html>

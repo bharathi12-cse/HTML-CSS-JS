@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Practice adding, removing, and updating values in objects</h1>
+
+    <script>
+        var person = {}; // This creates an empty object called "person"
+
+
+        //Add the following properties to the "person" object:
+
+        person.name = "John";
+        person.age = 30;
+        person.city = "Newyork";
+        console.log(person)
+
+
+        //Remove the "age" property from the "person" object
+        var person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        // Remove the "age" property from the "person" object
+        delete person.age;
+        console.log(person)
+
+        //Add the "job" property with the value "Engineer"
+        var person = {
+            name: "John",
+            city: "New York"
+        }
+
+        person.job = "Engineer";
+        console.log(person)
+
+        // Update the "city" property to "San Francisco"
+        var person = {
+            name: "John",
+            age:30,
+            job: "Engineer",
+            city: "New York"
+        };
+        person.city = "San Francisco";
+        console.log(person)
+
+
+        
+
+
+    </script>
+</body>
+
+</html>

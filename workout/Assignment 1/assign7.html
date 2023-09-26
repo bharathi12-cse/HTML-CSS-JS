@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Multiplication table for a positive integer up to 10 </title>
+
+</head>
+<h1>Multiplication table for a positive integer up to 10</h1>
+
+<body>
+    <script>
+
+
+        function printMultiplicationTable() {
+            if (num <= 0) {
+                console.log("Please enter a positive integer.");
+                return;
+            }
+
+            console.log(`Multiplication table for ${num}:`);
+            for (let i = 1; i <= 10; i++) {
+                console.log(`${num} x ${i} = ${num * i}`);
+            }
+        }
+
+        // Example usage:
+        printMultiplicationTable(2);
+    </script>
+</body>
+
+</html>
